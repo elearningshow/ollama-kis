@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="modelName_page_title"></title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/github-markdown-dark.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/tailwind.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/inter.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/tw.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/custom.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/syntax.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/fonts.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/chat_interface.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/hamburger_menu.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/popup_window.css') }}">
+  <style>
+    @keyframes spinner {
+      to {transform: rotate(360deg);}
+    }
+    .spinner {
+      display: inline-block;
+      width: 1em;
+      height: 1em;
+      border: 2px solid rgba(0, 0, 0, 0.3);
+      border-radius: 50%;
+      border-top-color: #000;
+      animation: spinner 0.6s linear infinite;
+    }
+    .popup {
+      display: none;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 300px;
+      z-index: 1000;
+    }
+    .popup input {
+      display: block;
+      margin-bottom: 10px;
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .popup button {
+      padding: 5px;
+      background-color: #ccc;
+      border: 1px solid #ccc;
+      border-left: none;
+      border-radius: 0 5px 5px 0;
+      cursor: pointer;
+    }
+    .popup button:hover {
+      background: #ffb222;
+      transition: background 250ms ease-out;
+    }
+    .overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 999;
+    }
+
+  </style>
+
+</head>
+<body>
+
+  <div class="overlay" id="overlay"></div>
+  <div class="popup" id="welcomePopup">
+    <p class="left-align-padding" style="font-weight: bold;" id="modelName_welcome_popup"></p>
+    <p>&nbsp;</p>
+    <p id="modelWelcome"></p>
+    <p>&nbsp;</p>
+    <p>What is your name?</p>
+    <input type="text" id="userNamePopup" placeholder="Your name">
+    <button onclick="saveName()">Submit</button>
+  </div>
+
+  <!-- hamburger menu start -->
+  <div class="container">
+    <div class="hamburger-menu">
+      <input id="menu__toggle" type="checkbox" />
+      <label class="menu__btn" for="menu__toggle">
+        <span></span>
+      </label>
+      <ul class="menu__box">
+        <li class="menu__item"><a href="javascript:void(0);" onclick="document.getElementById('open-modal').checked = !document.getElementById('open-modal').checked;">About</a></li>
+      </ul>
+    </div>
+    <div class="modal__container">
+      <input type="checkbox" id="open-modal" class="modal__toggler" />
+      <label class="modal__mask" for="open-modal"></label>
+      <div class="modal">
+        <label class="modal__close" for="open-modal"></label>
+        <div class="modal__content">
+          <p class="left-align-padding" style="font-weight: bold;">Ollama-Kis - June 2024</p>
+          <p>The Keep It Simple - Graphical User Interface has been created by <a href="https://www.linkedin.com/in/kevinbrake/" class="text-decoration: underline" target="_nu">Kevin Brake</a> to assist in removing distractions and increasing user focus when conducting AI use for business purposes.</p>
+          <p>&nbsp;</p>
+          <p class="left-align-padding" style="font-weight: bold;" id="modelName_overview_title"></p>
+          <p id="modelOverview"></p>
+          <p>&nbsp;</p>
+    <div>
+	<p class="left-align-padding" style="font-weight: bold;">Contact Information</p>
+        <h1 id="contactname"></h1>
+
+        <p><a id="email"><span id="email"></span></a></p>
+        <p><a id="website"><span id="website"></span></a></p>
+
+
+        <p><span id="phone"></span></p>
+    </div>
+          <p>&nbsp;</p>
+          <label class="button" for="open-modal" style="margin-top: 20px;">Close Window</label>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- hamburger menu end -->
+
+  <div class="container" id="mainContent">
+    <div class="chat-header">
+      <span>
+<img src="{{ model_graphic_url }}" alt="LLM icon for Model" style="display: block; margin-left: auto; margin-right: auto;">
+        <b><span id="modelName_under_icon_title"></span></b>
+      </span>
+    </div>
+    <div class="chat-history" id="history">
+      <div style="padding-top: 10px; padding-bottom: 10px;">
+        <p class="left-align-padding" id="responseText"></p>
+      </div>
+    </div>
+
+    <div class="chat-input-container">
+      <form id="inputForm" class="chat-input">
+        <input type="hidden" id="userName" name="userName">
+        <input type="text" id="userInput" name="prompt">
+        <button id="submitButton" type="submit"><i id="submitIcon" class="fas fa-paper-plane"></i></button>
+        <div id="spinner" class="spinner" style="display:none; position: relative;"></div>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    const form = document.getElementById('inputForm');
+    const submitButton = document.getElementById('submitButton');
+    const spinner = document.getElementById('spinner');
+
+    form.addEventListener('submit', async (event) => {
+      event.preventDefault(); // Prevent default form submission
+
+      const userInput = document.getElementById('userInput').value.trim();
+      const userName = document.getElementById('userName').value.trim();
+
+      if (!userInput) {
+        alert('Please ask your question before submitting.');
+        return;
+      }
+
+      submitButton.style.display = 'none'; // Hide submit button
+      spinner.style.display = 'inline-block'; // Show spinner
+
+      const formData = new FormData(form);
+
+      // Send input to Python script using fetch API
+      const response = await fetch('/', {  // Assuming your Flask app is running at root URL
+        method: 'POST',
+        body: formData
+      });
+
+      if (response.ok) {
+        const data = await response.json();
+        document.getElementById('responseText').innerHTML = `
+          <span style="font-weight: bold;">Q: </span>&nbsp; ${data.question}<p>
+          <span style="font-weight: bold;">A: </span>&nbsp; ${data.response}<p>
+          <p style="font-style: italic;">Processing Time: ${data.processing_time} seconds</p>
+        `;
+
+        if (data.processed === 'complete') {
+          form.reset(); // Reset the form
+        } else {
+          alert('Error processing data.'); // Display error message
+        }
+      } else {
+        alert('Network error occurred.'); // Display network error message
+      }
+      submitButton.style.display = 'inline-block'; // Show submit button
+      spinner.style.display = 'none'; // Hide spinner
+    });
+
+    window.onload = function() {
+      if (!localStorage.getItem('popupShown')) {
+        document.getElementById('welcomePopup').style.display = 'block';
+        document.getElementById('overlay').style.display = 'block';
+      } else {
+        const storedName = localStorage.getItem('userName');
+        if (storedName) {
+          document.getElementById('userName').value = storedName;
+        }
+      }
+    }
+
+    function saveName() {
+      const userName = document.getElementById('userNamePopup').value.trim();
+      if (!userName) {
+        alert('Please enter your name.');
+        return;
+      }
+      localStorage.setItem('userName', userName);
+      document.getElementById('userName').value = userName;
+      localStorage.setItem('popupShown', true);
+      document.getElementById('welcomePopup').style.display = 'none';
+      document.getElementById('overlay').style.display = 'none';
+    }
+
+  </script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        fetch('/config')
+            .then(response => response.json())
+            .then(data => {
+                // Populate unique modelName variables
+                document.getElementById('modelName_page_title').textContent = data.modelName;
+                document.getElementById('modelName_under_icon_title').textContent = data.modelName;
+                document.getElementById('modelName_overview_title').textContent = data.modelName;
+                document.getElementById('modelName_welcome_popup').textContent = data.modelName;
+
+                document.getElementById('modelOverview').textContent = data.modelOverview;
+                document.getElementById('modelWelcome').textContent = data.modelWelcome;
+
+                document.getElementById('contactname').textContent = data.contactName;
+                document.getElementById('email').textContent = data.email;
+                document.getElementById('website').textContent = data.website;
+                document.getElementById('phone').textContent = data.phone;
+
+                // Update the href attribute for the mailto link
+                const emailLink = document.getElementById('email'); // Get the email anchor element
+                emailLink.href = `mailto:${data.email}`; // Set the href attribute using the email address from data
+
+                // Corrected code to set href attribute for anchor tag
+                const anchor = document.getElementById('website'); // Get the website anchor element
+                anchor.href = data.website; // Set the href attribute using data.website
+
+            })
+            .catch(error => console.error('Error fetching config:', error));
+    });
+</script>
+
+</body>
+</html>

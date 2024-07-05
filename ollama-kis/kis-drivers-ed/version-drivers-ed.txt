@@ -1,0 +1,16 @@
+Basic features
+
+Jun 7
+- Ask and recieve answer to questions
+- Hamburger menu with about section
+
+Jun 18
+- Variables included to ease setup for new users with different models
+
+July 5
+- Create drivers education example custom model (download for use with Ollama and Open WebUI)
+- Conversation log enabled
+- Login name to be used for conversation log storage and retrevial
+
+
+(1844 files)
