@@ -4,6 +4,12 @@
 
 <h1>Installation</h1> 
 
+<b>#Requires local install of Ollama and Open WebUI </b><br><br>
+Select modelfiles <br><br>
+Discover a modelfile <br><br>
+Search for or download the <a href="https://openwebui.com/m/sodkgb/drivers_education:latest/" target="new"> Drivers Education Expert Model</a> <br><br>
+
+
 <b>#Create local directory for this example </b><br><br>
 c:\ai <br><br>
 
