@@ -13,22 +13,19 @@ The Keep It Simple - A simple Ollama Graphical User Interface to assist in remov
   <img alt="ollama" height="200px" src="drivers-ed-screenshot2.jpg">
 </div>
 
-<h1>Installation</h1> <br><br>
+<h1>Installation</h1> 
 
-#Create local directory for this example <br><br>
-c:\ai\ollama-kis <br><br>
+<b>#Create local directory for this example </b><br><br>
+c:\ai <br><br>
 
-#Create python environment <br><br>
-python -m venv .venv <br><br>
-<br><br>
-
-#Activate python environment <br><br>
-.venv\Scripts\activate.bat <br><br>
-
-#Clone github package<br><br>
+<b>#Clone github package (While in the c:\ai directory)  </b><br><br>
 git clone https://github.com/elearningshow/ollama-kis.git <br><br>
 
-#Install requirements <br><br>
-cmd <br><br>
+<b>#Install requirements  </b><br><br>
 cd\ai\ollama-kis\kis-drivers-ed <br><br>
-pip -r install requirements.txt  <br><br>
+pip install -r requirements.txt  <br><br>
+
+<b>#Run (This file will open your default browser, start a local server and run the Drivers Education Expert Model)  </b><br><br>
+startserver-ask.bat
+
+
