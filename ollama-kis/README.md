@@ -25,7 +25,7 @@ git clone https://github.com/elearningshow/ollama-kis.git <br><br>
 cd\ai\ollama-kis\kis-drivers-ed <br><br>
 pip install -r requirements.txt  <br><br>
 
-<b>#Run (This file will open your default browser, start a local server and run the Drivers Education Expert Model)  </b><br><br>
+<b>#Run (This file will open your default browser, start a local server and run the <a href="https://openwebui.com/m/sodkgb/drivers_education:latest/" target="new"> Drivers Education Expert Model</a>)  </b><br><br>
 startserver-ask.bat
 
 
