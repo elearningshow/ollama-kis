@@ -17,7 +17,7 @@ c:\ai <br><br>
 git clone https://github.com/elearningshow/ollama-kis.git <br><br>
 
 <b>#Activate python environment </b><br><br>
-.venv\Scripts\activate.bat
+.venv\Scripts\activate.bat  <br><br>
 
 <b>#Install requirements  </b><br><br>
 pip install -r requirements.txt  <br><br>
