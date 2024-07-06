@@ -75,9 +75,10 @@ This will download all the required files to your pc. <br><br></td>
     pip install -r requirements.txt</td>
   </tr>  
    <tr>
-    <td>Run (This file will open your default browser, start a local server and run the <a href="https://openwebui.com/m/sodkgb/drivers_education:latest/" target="new"> Drivers Education Expert Model</a> <br><br></td>
-    <td>tbd</td>
-    <td>startserver-ask.bat <br><br></td>
+    <td>Run - Custom LLM Model (This file will open your default browser, start a local server) <br><br></td>
+    <td><img alt="ollama" src="first-time-install/startserver-ask.jpg"></td>
+    <td>In windows, browse to view the content in the AI folder.  Then select the following:<br><br>
+    startserver-ask.bat <br><br></td>
   </tr>  
 </table> 
 
