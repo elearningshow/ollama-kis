@@ -42,7 +42,7 @@
      <tr>
     <td>Get Open WebUI Model <br><br></td>
     <td><img alt="openwebuimodel" src="first-time-install/open-webui-models.jpg"><br><img alt="openwebuigetmodel" src="first-time-install/open-webui-model.jpg"></td>
-    <td><a href="https://openwebui.com/m/sodkgb/drivers_education:latest/" target="new">Download Open WebUI model for Drivers Education</a> select get to have it added to your local models. <br><br>
+    <td><a href="https://openwebui.com/m/sodkgb/drivers_education:latest/" target="new">Download Open WebUI model for Drivers Education</a> select get to have it added to your local models.  You may also choose to create your own model; if so, you will need to update the app.py file with the necessary model information.<br><br>
 </td>
   </tr>
   <tr>
