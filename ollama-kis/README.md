@@ -10,6 +10,11 @@
     <th>Screenshot</th>
     <th>Description</th>
   </tr>   
+      <tr>
+    <td>Install Python for Windows  <br><br></td>
+    <td><img alt="ollama" src="first-time-install/install-python.jpg"></td>
+    <td> <a href="https://www.python.org/downloads/" target="new">Download Python for Windows</a> and follow instructions for installation. <br><br></td>
+  </tr>
    <tr>
     <td>Install Ollama for Windows  <br><br></td>
     <td><img alt="ollama" src="first-time-install/ollama-download.jpg"></td>
@@ -18,9 +23,15 @@
       <tr>
     <td>Install Docker Desktop for Windows  <br><br></td>
     <td><img alt="ollama" src="first-time-install/docker-download2.jpg"></td>
-    <td> <a href="https://www.docker.com/products/docker-desktop/" target="new">Download Docker for Windows</a> and follow instructions for installation. <br><br></td>
+    <td> <a href="https://www.docker.com/products/docker-desktop/" target="new">Download Docker Desktop for Windows</a> and follow instructions for installation. <br><br></td>
   </tr> 
-   <tr>
+  <tr>
+    <td>Install Open WebUI <br><br></td>
+    <td><img alt="openwebui" src="first-time-install/install-open-webui.jpg"></td>
+    <td><a href="https://docs.openwebui.com" target="new">Install Open WebUI for Ollama using Docker</a> follow instructions for installation. <br><br>
+</td>
+  </tr>
+      <tr>
     <td>Pull LLM for Ollama<br><br></td> 
     <td><img alt="ollama" src="first-time-install/pull-model.png"></td>
     <td>In windows, type <b>cmd</b> in the start menu to bring up command window.  Then type the following:<br><br>
@@ -28,15 +39,14 @@
     </td>
   </tr>  
   <tr>
-    <td>Install Open WebUI <br><br></td>
-    <td><img alt="openwebui" src="first-time-install/install-open-webui.jpg"></td>
-    <td><a href="https://docs.openwebui.com" target="new">Install Open WebUI for Ollama using Docker</a> follow instructions for installation. <br><br>
-</td>
-  </tr>
-  <tr>
     <td>Create local directory for this example <br><br></td>
-    <td>tbd</td>
-    <td>c:\ai <br><br></td>
+    <td><img alt="ollama" src="first-time-install/make_ai_directory.jpg"></td>
+    <td>In windows, type <b>cmd</b> in the start menu to bring up command window.  Then type the following:<br><br>
+    cd\<br>
+    mkdir ai<br>
+    cd\ai<br>
+    You should see this c:\ai      
+    </td>
   </tr>  
    <tr>
     <td>Clone github package (While in the c:\ai directory) first timers may need to install - https://gitforwindows.org/ (restart of pc recommended) <br><br>
