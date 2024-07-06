@@ -22,19 +22,19 @@
   </tr>
       <tr>
     <td>Install Docker Desktop for Windows  <br><br></td>
-    <td><img alt="ollama" src="first-time-install/docker-download2.jpg"></td>
+    <td><img alt="ollama" src="first-time-install/docker-download2.jpg"><br><img alt="ollama" src="first-time-install/docker-download3.jpg"></td>
     <td> <a href="https://www.docker.com/products/docker-desktop/" target="new">Download Docker Desktop for Windows</a> and follow instructions for installation. <br><br></td>
   </tr> 
   <tr>
     <td>Install <a href="https://docs.openwebui.com" target="new">Open WebUI </a><br><br></td>
-    <td><img alt="openwebui" src="first-time-install/install-open-webui.jpg"></td>
+    <td><img alt="openwebui" src="first-time-install/install-open-webui.jpg"><br><img alt="openwebuidocker" src="first-time-install/docker-install-open-webui.jpg"></td>
     <td>In windows, type <b>cmd</b> in the start menu to bring up command window.  Then type the following:<br><br>
       docker run -d -p 3000:8080 --add-host=host.docker.internal:host-gateway -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:main
 </td>
   </tr>
      <tr>
     <td>Get Open WebUI Model <br><br></td>
-    <td><img alt="openwebuimodel" src="first-time-install/open-webui-models.jpg"></td>
+    <td><img alt="openwebuimodel" src="first-time-install/open-webui-models.jpg"><br><img alt="openwebuigetmodel" src="first-time-install/open-webui-model.jpg"></td>
     <td><a href="https://openwebui.com/m/sodkgb/drivers_education:latest/" target="new">Download Open WebUI model for Drivers Education</a> select get to have it added to your local models. <br><br>
 </td>
   </tr>
