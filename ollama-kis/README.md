@@ -26,9 +26,10 @@
     <td> <a href="https://www.docker.com/products/docker-desktop/" target="new">Download Docker Desktop for Windows</a> and follow instructions for installation. <br><br></td>
   </tr> 
   <tr>
-    <td>Install Open WebUI <br><br></td>
+    <td>Install <a href="https://docs.openwebui.com" target="new">Open WebUI </a><br><br></td>
     <td><img alt="openwebui" src="first-time-install/install-open-webui.jpg"></td>
-    <td><a href="https://docs.openwebui.com" target="new">Install Open WebUI for Ollama using Docker</a> follow instructions for installation. <br><br>
+    <td>In windows, type <b>cmd</b> in the start menu to bring up command window.  Then type the following:<br><br>
+      docker run -d -p 3000:8080 --add-host=host.docker.internal:host-gateway -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:main
 </td>
   </tr>
      <tr>
