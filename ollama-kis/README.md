@@ -16,8 +16,8 @@
     <td> <a href="https://ollama.com" target="new">Download Ollama for Windows</a> and follow instructions for installation. <br><br></td>
   </tr>
       <tr>
-    <td>Install Docker for Windows (requires signup) <br><br></td>
-    <td><img alt="ollama" src="first-time-install/docker-download.jpg"></td>
+    <td>Install Docker Desktop for Windows  <br><br></td>
+    <td><img alt="ollama" src="first-time-install/docker-download2.jpg"></td>
     <td> <a href="https://hub.docker.com/signup?redirectTo=/subscription?plan=free" target="new">Download Docker for Windows</a> and follow instructions for installation. <br><br></td>
   </tr> 
    <tr>
