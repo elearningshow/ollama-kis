@@ -13,7 +13,7 @@ Search for or download the <a href="https://openwebui.com/m/sodkgb/drivers_educa
 <b>#Create local directory for this example </b><br><br>
 c:\ai <br><br>
 
-<b>#Clone github package (While in the c:\ai directory) first timers may need to install - https://gitforwindows.org/  </b><br><br>
+<b>#Clone github package (While in the c:\ai directory) first timers may need to install - https://gitforwindows.org/ (restart of pc recommended) </b><br><br>
 git clone https://github.com/elearningshow/ollama-kis.git <br><br>
 
 <b>#Activate python environment </b><br><br>
