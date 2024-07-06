@@ -12,5 +12,6 @@ This interface has been created to work with custom LLMs - see https://openwebui
 
 <div align="center">
   <img alt="ollama" height="200px" src="ollama-kis/drivers-ed-screenshot2.jpg"><BR><BR>
- <a href="ollama-kis/first-time-install/ollama-kis-overview.mp4" target="new"> <img alt="ollama-demo-video" height="200px" src="ollama-kis/first-time-install/ollama-kis-demo-video.jpg">Watch Video Demo</a>
+ <a href="ollama-kis/first-time-install/ollama-kis-overview.mp4" target="new"> <img alt="ollama-demo-video" height="200px" src="ollama-kis/first-time-install/ollama-kis-demo-video.jpg"><BR>
+   Watch Video Demo</a>
 </div>
