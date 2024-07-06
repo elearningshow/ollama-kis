@@ -14,7 +14,9 @@ Search for or download the <a href="https://openwebui.com/m/sodkgb/drivers_educa
 c:\ai <br><br>
 
 <b>#Clone github package (While in the c:\ai directory) first timers may need to install - https://gitforwindows.org/ (restart of pc recommended) </b><br><br>
-git clone https://github.com/elearningshow/ollama-kis.git <br><br>
+Windows users will need to select start and type cmd to bring up the command window <br><br>
+Then type, git clone https://github.com/elearningshow/ollama-kis.git <br><br>
+This will download all the required files to your pc. <br><br>
 
 <b>#Activate python environment </b><br><br>
 .venv\Scripts\activate.bat  <br><br>
