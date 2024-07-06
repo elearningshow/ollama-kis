@@ -32,7 +32,7 @@
 </td>
   </tr>
      <tr>
-    <td>Pull Open WebUI Model <br><br></td>
+    <td>Get Open WebUI Model <br><br></td>
     <td><img alt="openwebuimodel" src="first-time-install/open-webui-models.jpg"></td>
     <td><a href="https://openwebui.com/m/sodkgb/drivers_education:latest/" target="new">Download Open WebUI model for Drivers Education</a> select get to have it added to your local models. <br><br>
 </td>
@@ -57,20 +57,22 @@
    <tr>
     <td>Clone github package (While in the c:\ai directory) first timers may need to install - https://gitforwindows.org/ (restart of pc recommended) <br><br>
 </td>
-    <td><img alt="ollama" height="200px" src="first-time-install/git-clone.png"></td>
-    <td>Windows users will need to select start and type cmd to bring up the command window <br><br>
-Then type, git clone https://github.com/elearningshow/ollama-kis.git <br><br>
+    <td><img alt="ollama" src="first-time-install/git-clone.png"></td>
+    <td>In windows, type <b>cmd</b> in the start menu to bring up command window.  Then type the following:<br><br>
+     git clone https://github.com/elearningshow/ollama-kis.git <br><br>
 This will download all the required files to your pc. <br><br></td>
   </tr>
      <tr>
     <td>Activate python environment <br><br></td>
-    <td>tbd</td>
-    <td>.venv\Scripts\activate.bat  <br><br></td>
+    <td><img alt="ollama" src="first-time-install/python-activate.jpg"></td>
+    <td>In windows, type <b>cmd</b> in the start menu to bring up command window.  Then type the following:<br><br>
+    .venv\Scripts\activate.bat  <br><br></td>
   </tr>  
-     <tr>
+  <tr>
     <td>Install requirements  <br><br></td>
-    <td>tbd</td>
-    <td>pip install -r requirements.txt  <br><br></td>
+    <td><img alt="ollama" src="first-time-install/pip-requirements.jpg"></td>
+    <td>In windows, type <b>cmd</b> in the start menu to bring up command window.  Then type the following:<br><br>
+    pip install -r requirements.txt</td>
   </tr>  
    <tr>
     <td>Run (This file will open your default browser, start a local server and run the <a href="https://openwebui.com/m/sodkgb/drivers_education:latest/" target="new"> Drivers Education Expert Model</a> <br><br></td>
