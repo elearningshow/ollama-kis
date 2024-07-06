@@ -21,7 +21,7 @@
     <td> <a href="https://hub.docker.com/signup?redirectTo=/subscription?plan=free" target="new">Download Docker for Windows</a> and follow instructions for installation. <br><br></td>
   </tr> 
    <tr>
-    <td>Pull LLM for Ollama<br><br></td>
+    <td>Pull LLM for Ollama<br><br></td> 
     <td><img alt="ollama" src="first-time-install/pull-model.png"></td>
     <td>In windows, type <b>cmd</b> in the start menu to bring up command window.  Then type the following:<br><br>
     ollama pull llama3
