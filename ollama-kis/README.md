@@ -18,7 +18,7 @@
       <tr>
     <td>Install Docker Desktop for Windows  <br><br></td>
     <td><img alt="ollama" src="first-time-install/docker-download2.jpg"></td>
-    <td> <a href="https://hub.docker.com/signup?redirectTo=/subscription?plan=free" target="new">Download Docker for Windows</a> and follow instructions for installation. <br><br></td>
+    <td> <a href="https://www.docker.com/products/docker-desktop/" target="new">Download Docker for Windows</a> and follow instructions for installation. <br><br></td>
   </tr> 
    <tr>
     <td>Pull LLM for Ollama<br><br></td> 
