@@ -83,7 +83,7 @@ This will download all the required files to your pc. <br><br></td>
      <tr>
     <td>Configure  <br><br></td>
     <td><img alt="ollama" src="first-time-install/configure_vars1.jpg"><BR><img alt="ollama" src="first-time-install/configure_vars2.jpg"></td>
-    <td>You can use a basic text editor such as Notepad++, open the file named app.py and revise the content to make your own unique LLM.</td>
+    <td>You can use a basic text editor such as <a href="https://notepad-plus-plus.org/downloads/" target="new">Notepad++</a>, open the file named app.py and revise the content to make your own unique LLM.</td>
   </tr>  
    <tr>
     <td>Run - Custom LLM Model (This file will open your default browser, start a local server) <br><br></td>
