@@ -31,6 +31,12 @@
     <td><a href="https://docs.openwebui.com" target="new">Install Open WebUI for Ollama using Docker</a> follow instructions for installation. <br><br>
 </td>
   </tr>
+     <tr>
+    <td>Pull Open WebUI Model <br><br></td>
+    <td><img alt="openwebuimodel" src="first-time-install/open-webui-models.jpg"></td>
+    <td><a href="https://openwebui.com/m/sodkgb/drivers_education:latest/" target="new">Download Open WebUI model for Drivers Education</a> select get to have it added to your local models. <br><br>
+</td>
+  </tr>
       <tr>
     <td>Pull LLM for Ollama<br><br></td> 
     <td><img alt="ollama" src="first-time-install/pull-model.png"></td>
