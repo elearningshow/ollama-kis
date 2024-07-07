@@ -23,7 +23,7 @@
       <tr>
     <td>Install Docker Desktop for Windows  <br><br></td>
     <td><img alt="ollama" src="first-time-install/docker-download2.jpg"><br><img alt="ollama" src="first-time-install/docker-download3.jpg"></td>
-    <td> <a href="https://www.docker.com/products/docker-desktop/" target="new">Download Docker Desktop for Windows</a> and follow instructions for installation. <br><br></td>
+    <td> <a href="https://www.docker.com/products/docker-desktop/" target="new">Download Docker Desktop for Windows</a> and follow instructions for installation. <br><br><a href="first-time-install/Docker Installation Issue.docx">How to correct the Docker Installation Issue for Lenovo</a> </td>
   </tr> 
   <tr>
     <td>Install <a href="https://docs.openwebui.com" target="new">Open WebUI </a><br><br></td>
