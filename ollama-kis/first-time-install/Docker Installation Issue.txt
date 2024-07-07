@@ -1,0 +1,30 @@
+Docker Installation Issue - Lenovo
+
+If you're experiencing Docker issues on your Lenovo T430 and suspect that BIOS settings might be involved, here are a few BIOS settings you might need to check:
+
+1. **Virtualization Technology (VT-x)**:
+    - Ensure that Intel Virtualization Technology is enabled.
+    - To do this, go to the BIOS setup (press "Enter" at the Lenovo logo, then "F1"), navigate to the `Security` tab, and then select `Virtualization`. Make sure the `Intel Virtualization Technology` option is enabled.
+
+2. **I/O Virtualization (VT-d)**:
+    - Similarly, ensure that Intel VT-d (Directed I/O) is enabled if your Docker setup requires it.
+    - This setting can typically be found in the same `Security` tab under `Virtualization`.
+
+3. **Secure Boot**:
+    - Some Docker configurations might require disabling Secure Boot.
+    - To check this, go to the BIOS setup, navigate to the `Security` tab, and then select `Secure Boot`. Make sure Secure Boot is disabled if Docker needs it.
+
+4. **UEFI/Legacy Boot Mode**:
+    - Ensure the boot mode matches your operating system's requirements (UEFI or Legacy).
+    - Navigate to the `Startup` tab in the BIOS setup and check the `UEFI/Legacy Boot` setting.
+
+### Steps to Access BIOS and Adjust Settings:
+
+1. **Turn off your laptop** if it's currently on.
+2. **Power on the laptop** by pressing the power button.
+3. **Immediately start pressing the "Enter" key repeatedly** when the Lenovo logo appears on the screen.
+4. **Press "F1"** to enter the BIOS setup.
+5. **Navigate to the relevant tabs** (`Security` for Virtualization and Secure Boot, `Startup` for UEFI/Legacy Boot) and adjust the settings as needed.
+6. **Save and exit** the BIOS by pressing `F10` and confirming your changes.
+
+After adjusting the BIOS settings, restart your laptop and try running Docker again.
