@@ -1,0 +1,26 @@
+Basic features
+
+Jun 7
+- Ask and receive answer to questions
+- Hamburger menu with about section
+
+Jun 18
+- Variables included to ease setup for new users with different models
+
+July 5
+- Create drivers education example custom model (download for use with Ollama and Open WebUI)
+- Conversation log enabled
+- Login name to be used for conversation log storage and retrieval
+
+July 6
+- Improve installation instructions
+- Reduce size of requirements.txt
+- Included new screenshots
+- Included new introduction demo video
+- Test install on sample machines ongoing and may require instructions to be updated again
+
+July 7
+- Add instructions to correct docker install issue with Lenovo
+- Add direct download for Drivers Education Model (json)
+
+(1844 files)
