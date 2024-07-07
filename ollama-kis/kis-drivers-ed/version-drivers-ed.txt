@@ -19,5 +19,8 @@ July 6
 - Included new introduction demo video
 - Test install on sample machines ongoing and may require instructions to be updated again
 
+July 7
+- Add instructions to correct docker install issue with Lenovo
+- Add direct download for Drivers Education Model (json)
 
 (1844 files)
