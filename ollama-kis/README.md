@@ -27,7 +27,7 @@
   </tr> 
   <tr>
     <td>Install <a href="https://docs.openwebui.com" target="new">Open WebUI </a><br><br></td>
-    <td><img alt="openwebui" src="first-time-install/install-open-webui.jpg"><br><img alt="openwebuidocker" src="first-time-install/docker-install-open-webui.jpg"></td>
+    <td><img alt="openwebui" src="first-time-install/install-open-webui.jpg"><br><img alt="openwebuidocker" src="first-time-install/docker-install-open-webui.jpg"></td> Search in Docker for ghcr.io/open-webui/open-webui:main container or <br><br>
     <td>In windows, type <b>cmd</b> in the start menu to bring up command window.  Then type the following:<br><br>
       docker run -d -p 3000:8080 --add-host=host.docker.internal:host-gateway -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:main
 </td>
