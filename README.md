@@ -1,5 +1,5 @@
 <div align="center">
-  <img alt="ollama" height="200px" src="ollama-kis/first-time-install/ollama-kis.jpg">
+  <img alt="ollama" height="200px" src="ollama-kis/first-time-install/ollama-kis-logo.jpg">
 </div>
 
 # Ollama-Kis
