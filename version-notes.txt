@@ -22,5 +22,8 @@ July 6
 July 7
 - Add instructions to correct docker install issue with Lenovo
 - Add direct download for Drivers Education Model (json)
+- Deleted duplicate files
+- Reorganized files
+- Renamed files
 
 (1844 files)
