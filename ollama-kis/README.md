@@ -33,7 +33,7 @@
     </td>
   </tr>  
   <tr>
-    <td>Install <a href="https://docs.openwebui.com" target="new">Open WebUI - GUI</a><br><br></td>
+    <td>Install <a href="https://docs.openwebui.com" target="new">Open WebUI</a><br><br></td>
     <td><img alt="openwebui" src="first-time-install/install-open-webui.jpg"><br><img alt="openwebuidocker" src="first-time-install/docker-install-open-webui.jpg"></td> 
     <td>In windows, type <b>cmd</b> in the start menu to bring up command window.  Then type the following:<br><br>
       docker run -d -p 3000:8080 --add-host=host.docker.internal:host-gateway -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:main
@@ -91,12 +91,6 @@
     ollama pull llama3
     </td>
   </tr>  
-  </tr>
-     <tr>
-    <td>Get Open WebUI Model <br><br></td>
-    <td><img alt="openwebuimodel" src="first-time-install/open-webui-models.jpg"><br><img alt="openwebuigetmodel" src="first-time-install/open-webui-model.jpg"></td>
-    <td><ul><li><a href="https://openwebui.com/m/sodkgb/drivers_education:latest/" target="new">Direct download of Open WebUI model for Drivers Education</a> <li>  <a href="first-time-install/kis-drivers-ed-model/modelfiles-export-1713538792563.json" target="new">Alternate download of json file for Drivers Education Model</a>. <br><br> You may also choose to create your own model; if so, you will need to update the app.py file with the necessary model information, see configure file section below.</ul><br><br>
-</td>
   </tr>
   <tr>
     <td>Create local directory for this example <br><br></td>
