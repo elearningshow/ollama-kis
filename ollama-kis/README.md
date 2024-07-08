@@ -48,10 +48,9 @@
   </tr>
      <tr>
     <td>Run Open WebUI in browser <br><br></td>
-    <td><img alt="openwebuidocker" src="first-time-install/open-webui-drivers-ed-model3d.png"><br><img alt="openwebuidocker" src="first-time-install/open-webui-drivers-ed-model3c.png"><br><img alt="openwebui" src="first-time-install/open-webui-drivers-ed-model3.png"><br><img alt="openwebui" src="first-time-install/open-webui-drivers-ed-model3b.png"><br></td> 
+    <td><img alt="openwebuidocker" src="first-time-install/open-webui-drivers-ed-model3c.png"><br><img alt="openwebui" src="first-time-install/open-webui-drivers-ed-model3.png"><br><img alt="openwebui" src="first-time-install/open-webui-drivers-ed-model3b.png"><br></td> 
     <td>
       <OL>
-        <LI>Select Workspace
          <LI>Visit https://openwebui.com/m/sodkgb/drivers_education:latest
          <LI> Select Get 
         <li> Enter: http://localhost:3000
