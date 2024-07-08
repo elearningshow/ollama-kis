@@ -60,6 +60,10 @@
       </ol>      
     </td>
   </tr>  
+        <tr>
+    <td colspan="3"><div align=center>Congratulations you can now run the custom Drivers Education Model! </div>    
+    </td>
+  </tr>  
 </table> 
 
 
