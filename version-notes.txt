@@ -26,4 +26,8 @@ July 7
 - Reorganized files
 - Renamed files
 
-
+July 8
+- Updated app.py to enable full customization by just updating text variables
+- Updated graphics
+- Updated instructions
+- Tested local Open WebUI and Custom GUI instruction
