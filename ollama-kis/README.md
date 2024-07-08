@@ -48,7 +48,7 @@
   </tr>
      <tr>
     <td>Run Open WebUI in browser <br><br></td>
-    <td><img alt="openwebuidocker" src="first-time-install/open-webui-drivers-ed-model3c.png"><br><img alt="openwebui" src="first-time-install/open-webui-drivers-ed-model3.png"><br><img alt="openwebui" src="first-time-install/open-webui-drivers-ed-model3b.png"><br></td> 
+    <td><img alt="openwebuidocker" src="first-time-install/open-webui-drivers-ed-model-page.png"><br><img alt="openwebuidocker" src="first-time-install/open-webui-drivers-ed-model3c.png"><br><img alt="openwebui" src="first-time-install/open-webui-drivers-ed-model3.png"><br><img alt="openwebui" src="first-time-install/open-webui-drivers-ed-model3b.png"><br></td> 
     <td>
       <OL>
          <LI>Visit https://openwebui.com/m/sodkgb/drivers_education:latest
@@ -67,7 +67,7 @@
 
 
 
-<h1>Local Install of Custom GUI - (Instructions Being Updated)</h1>
+<h1>Local Install of Custom GUI </h1>
 <table>
   <tr>
     <th>Step</th>
@@ -138,6 +138,10 @@ This will download all the required files to your pc. <br><br></td>
     <td><img alt="ollama" src="first-time-install/startserver-ask.jpg"></td>
     <td>In windows, browse to view the content in the AI folder.  Then select the following:<br><br>
     startserver-ask.bat <br><br></td>
+  </tr>  
+          <tr>
+    <td colspan="3"><div align=center><b>Congratulations you can now run the custom Drivers Education Model with a basic user interface. </b></div>    
+    </td>
   </tr>  
 </table> 
 
