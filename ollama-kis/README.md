@@ -60,7 +60,7 @@
     </td>
   </tr>  
         <tr>
-    <td colspan="3"><div align=center>Congratulations you can now run the custom Drivers Education Model! </div>    
+    <td colspan="3"><div align=center><b>Congratulations you can now run the custom Drivers Education Model!</b></div>    
     </td>
   </tr>  
 </table> 
