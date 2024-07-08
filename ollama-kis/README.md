@@ -18,12 +18,12 @@
    <tr>
     <td>Install Ollama for Windows  <br><br></td>
     <td><img alt="ollama" src="first-time-install/ollama-download.jpg"></td>
-    <td> <a href="https://ollama.com" target="new">Download Ollama for Windows</a> and follow instructions for installation.  Recommend, going into settings and select General > Start Docker Desktop when you sign in to your computer. <br><br></td>
+    <td> <a href="https://ollama.com" target="new">Download Ollama for Windows</a> and follow instructions for installation.  <br><br></td>
   </tr>
       <tr>
     <td>Install Docker Desktop for Windows  <br><br></td>
     <td><img alt="ollama" src="first-time-install/docker-download2.jpg"><br><img alt="ollama" src="first-time-install/docker-download3.jpg"></td>
-    <td> <a href="https://www.docker.com/products/docker-desktop/" target="new">Download Docker Desktop for Windows</a> and follow instructions for installation. <br><br><a href="first-time-install/Docker Installation Issue.txt">How to correct the Docker Installation Issue for Lenovo</a> </td>
+    <td> <a href="https://www.docker.com/products/docker-desktop/" target="new">Download Docker Desktop for Windows</a> and follow instructions for installation. <br><br> Recommend, going into settings and select General > Start Docker Desktop when you sign in to your computer.   <br><br><a href="first-time-install/Docker Installation Issue.txt">How to correct the Docker Installation Issue for Lenovo</a> </td>
   </tr> 
   <tr>
     <td>Install <a href="https://docs.openwebui.com" target="new">Open WebUI - GUI</a><br><br></td>
