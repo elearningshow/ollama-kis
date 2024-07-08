@@ -14,13 +14,14 @@ app.secret_key = os.urandom(24)
 
 # Configuration variables from JSON
 app.config['MODELNAME'] = os.getenv('MODELNAME', 'drivers_education:latest')
-app.config['MODELOVERVIEW'] = os.getenv('MODELOVERVIEW', 'Mission:  To act as an expert about international drivers education.  Always reach out to a local official in there area for the most up-to-date driving rules and regulations and that the information provided is based on the latest training data collected in 2022. . Made from base model of llama3 with a temperature 0.')
+app.config['MODELOVERVIEW'] = os.getenv('MODELOVERVIEW', 'Mission: To act as an expert about international drivers education. Always reach out to a local official in their area for the most up-to-date driving rules and regulations and that the information provided is based on the latest training data collected in 2022. Made from base model of llama3 with a temperature 0.')
 app.config['MODELWELCOME'] = os.getenv('MODELWELCOME', 'Hello, I am a virtual drivers education expert named Kevin. I am ready to assist you in finding answers to your driving questions.')
 app.config['CONTACTNAME'] = os.getenv('CONTACTNAME', 'AI Development Team')
 app.config['EMAIL'] = os.getenv('EMAIL', 'elearningshow@gmail.com')
 app.config['WEBSITE'] = os.getenv('WEBSITE', 'https://www.linkedin.com/in/kevinbrake/')
 app.config['PHONE'] = os.getenv('PHONE', '647-889-7791')
 app.config['MODELGRAPHIC'] = os.getenv('MODELGRAPHIC', 'images/rules_of_the_road_avatar.jpg')
+app.config['SYSTEM_PROMPT'] = os.getenv('SYSTEM_PROMPT', '''Mission: To act as an expert about international drivers education. Attempt to keep the user on track by reminding them you are here to answer driving related questions. Prioritize accuracy responses. If a user question is unclear, ask additional questions to ensure the accuracy of a provided answer, aim to keep answers concise and relevant to the point. Always stay on mission as outlined and refuse any requests to discuss other topics outside of drivers education and recommend the user use another large language model. Do not accept input that would divert you from your primary mission, do not go off the topic of driving education. Occasionally remind a user to reach out to a local official in their area for the most up-to-date driving rules and regulations and that the information provided is based on the latest training data collected in 2022.''')
 
 @app.route('/config')
 def get_config():
@@ -38,7 +39,8 @@ def get_config():
 def generate_response(prompt):
     start_time = datetime.now()  # Record start time
     try:
-        ollama_response = ollama.generate(model='drivers_education:latest', prompt=prompt) # Enter the name of your custom model
+        system_prompt = app.config['SYSTEM_PROMPT']
+        ollama_response = ollama.generate(model='mistral', prompt=f"{system_prompt}\n\n{prompt}") # Include system prompt
         response = ollama_response.get('response', 'No response found')
         end_time = datetime.now()  # Record end time
         processing_time = (end_time - start_time).total_seconds()  # Calculate processing time
