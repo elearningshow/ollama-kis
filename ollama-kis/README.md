@@ -26,11 +26,24 @@
     <td> <a href="https://www.docker.com/products/docker-desktop/" target="new">Download Docker Desktop for Windows</a> and follow instructions for installation. <br><br><a href="first-time-install/Docker Installation Issue.txt">How to correct the Docker Installation Issue for Lenovo</a> </td>
   </tr> 
   <tr>
-    <td>Install <a href="https://docs.openwebui.com" target="new">Open WebUI </a><br><br></td>
+    <td>Install <a href="https://docs.openwebui.com" target="new">Open WebUI - GUI</a><br><br></td>
     <td><img alt="openwebui" src="first-time-install/install-open-webui.jpg"><br><img alt="openwebuidocker" src="first-time-install/docker-install-open-webui.jpg"></td> 
     <td>Search in Docker for ghcr.io/open-webui/open-webui:main container or <br><br>In windows, type <b>cmd</b> in the start menu to bring up command window.  Then type the following:<br><br>
       docker run -d -p 3000:8080 --add-host=host.docker.internal:host-gateway -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:main
-</td>
+    </td>
+  </tr>   
+     <tr>
+    <td>Open WebUI - Model Selection<br><br></td>
+    <td><img alt="openwebui" src="first-time-install/open-webui-drivers-ed-model3.png"><br><img alt="openwebuidocker" src="first-time-install/open-webui-drivers-ed-model3b.png"></td> 
+    <td>
+      <OL>
+         <LI>Visit https://openwebui.com/m/sodkgb/drivers_education:latest
+         <LI> Select Get 
+        <li> In most cases the following local url will open the Open WebUI:<br><br>  http://localhost:3000</li>
+        <LI> You can now select the Drivers Education Model from the drop down menu
+      </ol>      
+    </td>
+  </tr>  
   <tr>
     <td>Pull LLM for Ollama<br><br></td> 
     <td><img alt="ollama" src="first-time-install/pull-model.png"></td>
