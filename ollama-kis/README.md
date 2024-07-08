@@ -40,14 +40,15 @@
     </td>
   </tr>
      <tr>
-    <td>Open WebUI - Model Selection<br><br></td>
-    <td><img alt="openwebui" src="first-time-install/open-webui-drivers-ed-model3b.png"><br><img alt="openwebui" src="first-time-install/open-webui-drivers-ed-model3.png"><br><img alt="openwebuidocker" src="first-time-install/open-webui-drivers-ed-model3b.png"></td> 
+    <td>Run Open WebUI in browser <br><br></td>
+    <td><img alt="openwebui" src="first-time-install/open-webui-drivers-ed-model3b.png"><br><img alt="openwebuidocker" src="first-time-install/open-webui-drivers-ed-model3c.png"><br><img alt="openwebui" src="first-time-install/open-webui-drivers-ed-model3.png"></td> 
     <td>
       <OL>
         <LI>Select Workspace
          <LI>Visit https://openwebui.com/m/sodkgb/drivers_education:latest
          <LI> Select Get 
-        <li> In most cases the following local url will open the Open WebUI:<br><br>  http://localhost:3000</li>
+        <li> Enter: http://localhost:3000
+          <LI> Select Save & Create
         <LI> You can now select the Drivers Education Model from the drop down menu
       </ol>      
     </td>
