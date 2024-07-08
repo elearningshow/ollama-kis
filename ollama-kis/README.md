@@ -25,6 +25,13 @@
     <td><img alt="ollama" src="first-time-install/docker-download2.jpg"><br><img alt="ollama" src="first-time-install/docker-download3.jpg"></td>
     <td> <a href="https://www.docker.com/products/docker-desktop/" target="new">Download Docker Desktop for Windows</a> and follow instructions for installation. <br><br> Recommend, going into settings and select General > Start Docker Desktop when you sign in to your computer.   <br><br><a href="first-time-install/Docker Installation Issue.txt">How to correct the Docker Installation Issue for Lenovo</a> </td>
   </tr> 
+       <tr>
+    <td>Pull LLM for Ollama<br><br></td> 
+    <td><img alt="ollama" src="first-time-install/pull-model.png"></td>
+    <td>In windows, type <b>cmd</b> in the start menu to bring up command window.  Then type the following:<br><br>
+    ollama pull llama3
+    </td>
+  </tr>  
   <tr>
     <td>Install <a href="https://docs.openwebui.com" target="new">Open WebUI - GUI</a><br><br></td>
     <td><img alt="openwebui" src="first-time-install/install-open-webui.jpg"><br><img alt="openwebuidocker" src="first-time-install/docker-install-open-webui.jpg"></td> 
@@ -64,6 +71,16 @@
     <th>Screenshot</th>
     <th>Description</th>
   </tr>   
+        <tr>
+    <td>Install Python for Windows  <br><br></td>
+    <td><img alt="ollama" src="first-time-install/install-python.jpg"></td>
+    <td> <a href="https://www.python.org/downloads/" target="new">Download Python for Windows</a> and follow instructions for installation. </td>
+  </tr>
+   <tr>
+    <td>Install Ollama for Windows  <br><br></td>
+    <td><img alt="ollama" src="first-time-install/ollama-download.jpg"></td>
+    <td> <a href="https://ollama.com" target="new">Download Ollama for Windows</a> and follow instructions for installation.  <br><br></td>
+  </tr>
     <tr>
     <td>Pull LLM for Ollama<br><br></td> 
     <td><img alt="ollama" src="first-time-install/pull-model.png"></td>
