@@ -2,7 +2,7 @@
   <img alt="ollama" height="200px" src="first-time-install/ollama-kis-logo.jpg">
 </div>
 
-<h1>Installation</h1> 
+<h1>Installation - Open WebUI for Drivers Education</h1> 
 
  <table>
   <tr>
@@ -31,7 +31,14 @@
     <td>Search in Docker for ghcr.io/open-webui/open-webui:main container or <br><br>In windows, type <b>cmd</b> in the start menu to bring up command window.  Then type the following:<br><br>
       docker run -d -p 3000:8080 --add-host=host.docker.internal:host-gateway -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:main
     </td>
-  </tr>   
+  </tr>  
+        <tr>
+    <td>Run WebUI - Docker<br><br></td>
+    <td><img alt="openwebui" src="first-time-install/run-open-webui-docker.png"></td> 
+    <td>
+     Select the 3000:8080 link to view the Open WebUI interface   
+    </td>
+  </tr>
      <tr>
     <td>Open WebUI - Model Selection<br><br></td>
     <td><img alt="openwebui" src="first-time-install/open-webui-drivers-ed-model3.png"><br><img alt="openwebuidocker" src="first-time-install/open-webui-drivers-ed-model3b.png"></td> 
@@ -44,7 +51,16 @@
       </ol>      
     </td>
   </tr>  
+</table> 
+
+<h1>Local Install of Custom GUI - (Instructions Being Updated)</h1>
+<table>
   <tr>
+    <th>Step</th>
+    <th>Screenshot</th>
+    <th>Description</th>
+  </tr>   
+    <tr>
     <td>Pull LLM for Ollama<br><br></td> 
     <td><img alt="ollama" src="first-time-install/pull-model.png"></td>
     <td>In windows, type <b>cmd</b> in the start menu to bring up command window.  Then type the following:<br><br>
