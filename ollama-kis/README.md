@@ -1,5 +1,5 @@
 <div align="center">
-  <img alt="ollama" height="200px" src="ollama-kis.jpg">
+  <img alt="ollama" height="200px" src="first-time-install/ollama-kis.jpg">
 </div>
 
 <h1>Installation</h1> 
