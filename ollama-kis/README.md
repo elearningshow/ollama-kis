@@ -53,7 +53,7 @@
       <OL>
          <LI>Visit https://openwebui.com/m/sodkgb/drivers_education:latest
          <LI> Select Get 
-        <li> Enter: http://localhost:3000
+        <li> Enter: http://localhost:3000, Select Import to WebUI
           <LI> Select Save & Create
         <LI> You can now select the Drivers Education Model from the drop down menu
       </ol>      
