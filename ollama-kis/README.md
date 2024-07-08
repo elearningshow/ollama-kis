@@ -18,7 +18,7 @@
    <tr>
     <td>Install Ollama for Windows  <br><br></td>
     <td><img alt="ollama" src="first-time-install/ollama-download.jpg"></td>
-    <td> <a href="https://ollama.com" target="new">Download Ollama for Windows</a> and follow instructions for installation. <br><br></td>
+    <td> <a href="https://ollama.com" target="new">Download Ollama for Windows</a> and follow instructions for installation.  Recommend, going into settings and select General > Start Docker Desktop when you sign in to your computer. <br><br></td>
   </tr>
       <tr>
     <td>Install Docker Desktop for Windows  <br><br></td>
