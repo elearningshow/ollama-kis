@@ -27,7 +27,7 @@ July 7
 - Renamed files
 
 July 8
-- Updated app.py to enable full customization by just updating text variables
+- Updated app.py to enable full customization by just updating text variables (The content and fucntionality of these models will be based entirely on the base model and the focus made using the system prompt variable)
 - Updated graphics
 - Updated instructions
 - Tested local Open WebUI and Custom GUI instruction
