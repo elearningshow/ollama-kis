@@ -28,7 +28,7 @@
   <tr>
     <td>Install <a href="https://docs.openwebui.com" target="new">Open WebUI - GUI</a><br><br></td>
     <td><img alt="openwebui" src="first-time-install/install-open-webui.jpg"><br><img alt="openwebuidocker" src="first-time-install/docker-install-open-webui.jpg"></td> 
-    <td>Search in Docker for ghcr.io/open-webui/open-webui:main container or <br><br>In windows, type <b>cmd</b> in the start menu to bring up command window.  Then type the following:<br><br>
+    <td>In windows, type <b>cmd</b> in the start menu to bring up command window.  Then type the following:<br><br>
       docker run -d -p 3000:8080 --add-host=host.docker.internal:host-gateway -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:main
     </td>
   </tr>  
@@ -41,9 +41,10 @@
   </tr>
      <tr>
     <td>Open WebUI - Model Selection<br><br></td>
-    <td><img alt="openwebui" src="first-time-install/open-webui-drivers-ed-model3.png"><br><img alt="openwebuidocker" src="first-time-install/open-webui-drivers-ed-model3b.png"></td> 
+    <td><img alt="openwebui" src="first-time-install/open-webui-drivers-ed-model3b.png"><br><img alt="openwebui" src="first-time-install/open-webui-drivers-ed-model3.png"><br><img alt="openwebuidocker" src="first-time-install/open-webui-drivers-ed-model3b.png"></td> 
     <td>
       <OL>
+        <LI>Select Workspace
          <LI>Visit https://openwebui.com/m/sodkgb/drivers_education:latest
          <LI> Select Get 
         <li> In most cases the following local url will open the Open WebUI:<br><br>  http://localhost:3000</li>
@@ -52,6 +53,8 @@
     </td>
   </tr>  
 </table> 
+
+
 
 <h1>Local Install of Custom GUI - (Instructions Being Updated)</h1>
 <table>
