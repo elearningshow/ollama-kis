@@ -40,7 +40,7 @@
     </td>
   </tr>  
         <tr>
-    <td>Run Open-WebUI - Docker<br><br></td>
+    <td>Run Open-WebUI from Docker<br><br></td>
     <td><img alt="openwebui" src="first-time-install/run-open-webui-docker.png"></td> 
     <td>
      Select the 3000:8080 link to view the Open WebUI interface   
