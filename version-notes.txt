@@ -31,3 +31,8 @@ July 8
 - Updated graphics
 - Updated instructions
 - Tested local Open WebUI and Custom GUI instruction
+
+July 9
+- Update information graphics for configuration of app.py
+- Update app.py with more descriptive information to customize the output
+
