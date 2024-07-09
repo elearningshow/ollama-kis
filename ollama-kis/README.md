@@ -2,71 +2,6 @@
   <img alt="ollama" height="200px" src="first-time-install/ollama-kis-logo.jpg">
 </div>
 
-<h1>Installation - Open WebUI for Drivers Education</h1> 
-
- <table>
-  <tr>
-    <th>Step</th>
-    <th>Screenshot</th>
-    <th>Description</th>
-  </tr>   
-      <tr>
-    <td>Install Python for Windows  <br><br></td>
-    <td><img alt="ollama" src="first-time-install/install-python.jpg"></td>
-    <td> <a href="https://www.python.org/downloads/" target="new">Download Python for Windows</a> and follow instructions for installation. </td>
-  </tr>
-   <tr>
-    <td>Install Ollama for Windows  <br><br></td>
-    <td><img alt="ollama" src="first-time-install/ollama-download.jpg"></td>
-    <td> <a href="https://ollama.com" target="new">Download Ollama for Windows</a> and follow instructions for installation.  <br><br></td>
-  </tr>
-      <tr>
-    <td>Install Docker Desktop for Windows  <br><br></td>
-    <td><img alt="ollama" src="first-time-install/docker-download2.jpg"><br><img alt="ollama" src="first-time-install/docker-download3.jpg"></td>
-    <td> <a href="https://www.docker.com/products/docker-desktop/" target="new">Download Docker Desktop for Windows</a> and follow instructions for installation. <br><br> Recommend, going into settings and select General > Start Docker Desktop when you sign in to your computer.   <br><br><a href="first-time-install/Docker Installation Issue.txt">How to correct the Docker Installation Issue for Lenovo</a> </td>
-  </tr> 
-       <tr>
-    <td>Pull LLM for Ollama<br><br></td> 
-    <td><img alt="ollama" src="first-time-install/pull-model.png"></td>
-    <td>In windows, type <b>cmd</b> in the start menu to bring up command window.  Then type the following:<br><br>
-    ollama pull llama3
-    </td>
-  </tr>  
-  <tr>
-    <td>Install <a href="https://docs.openwebui.com" target="new">Open WebUI</a><br><br></td>
-    <td><img alt="openwebui" src="first-time-install/install-open-webui.jpg"><br><img alt="openwebuidocker" src="first-time-install/docker-install-open-webui.jpg"></td> 
-    <td>In windows, type <b>cmd</b> in the start menu to bring up command window.  Then type the following:<br><br>
-      docker run -d -p 3000:8080 --add-host=host.docker.internal:host-gateway -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:main
-    </td>
-  </tr>  
-        <tr>
-    <td>Run Open-WebUI from Docker<br><br></td>
-    <td><img alt="openwebui" src="first-time-install/run-open-webui-docker.png"></td> 
-    <td>
-     Select the 3000:8080 link to view the Open WebUI interface   
-    </td>
-  </tr>
-     <tr>
-    <td>Run Open WebUI in browser <br><br></td>
-    <td><img alt="openwebuidocker" src="first-time-install/open-webui-drivers-ed-model-page.png"><br><img alt="openwebuidocker" src="first-time-install/open-webui-drivers-ed-model3c.png"><br><img alt="openwebui" src="first-time-install/open-webui-drivers-ed-model3.png"><br><img alt="openwebui" src="first-time-install/open-webui-drivers-ed-model3b.png"><br></td> 
-    <td>
-      <OL>
-         <LI>Visit https://openwebui.com/m/sodkgb/drivers_education:latest
-         <LI> Select Get 
-        <li> Enter: http://localhost:3000, Select Import to WebUI
-          <LI> Select Save & Create
-        <LI> You can now select the Drivers Education Model from the drop down menu
-      </ol>      
-    </td>
-  </tr>  
-        <tr>
-    <td colspan="3"><div align=center><b>Congratulations you can now run the custom Drivers Education Model!</b></div>    
-    </td>
-  </tr>  
-</table> 
-
-
-
 <h1>Local Install of Custom GUI </h1>
 <table>
   <tr>
@@ -141,6 +76,70 @@ This will download all the required files to your pc. <br><br></td>
   </tr>  
           <tr>
     <td colspan="3"><div align=center><b>Congratulations you can now run the custom Drivers Education Model with a basic user interface. </b></div>    
+    </td>
+  </tr>  
+</table> 
+
+
+<h1>Installation - Open WebUI for Drivers Education</h1> 
+
+ <table>
+  <tr>
+    <th>Step</th>
+    <th>Screenshot</th>
+    <th>Description</th>
+  </tr>   
+      <tr>
+    <td>Install Python for Windows  <br><br></td>
+    <td><img alt="ollama" src="first-time-install/install-python.jpg"></td>
+    <td> <a href="https://www.python.org/downloads/" target="new">Download Python for Windows</a> and follow instructions for installation. </td>
+  </tr>
+   <tr>
+    <td>Install Ollama for Windows  <br><br></td>
+    <td><img alt="ollama" src="first-time-install/ollama-download.jpg"></td>
+    <td> <a href="https://ollama.com" target="new">Download Ollama for Windows</a> and follow instructions for installation.  <br><br></td>
+  </tr>
+      <tr>
+    <td>Install Docker Desktop for Windows  <br><br></td>
+    <td><img alt="ollama" src="first-time-install/docker-download2.jpg"><br><img alt="ollama" src="first-time-install/docker-download3.jpg"></td>
+    <td> <a href="https://www.docker.com/products/docker-desktop/" target="new">Download Docker Desktop for Windows</a> and follow instructions for installation. <br><br> Recommend, going into settings and select General > Start Docker Desktop when you sign in to your computer.   <br><br><a href="first-time-install/Docker Installation Issue.txt">How to correct the Docker Installation Issue for Lenovo</a> </td>
+  </tr> 
+       <tr>
+    <td>Pull LLM for Ollama<br><br></td> 
+    <td><img alt="ollama" src="first-time-install/pull-model.png"></td>
+    <td>In windows, type <b>cmd</b> in the start menu to bring up command window.  Then type the following:<br><br>
+    ollama pull llama3
+    </td>
+  </tr>  
+  <tr>
+    <td>Install <a href="https://docs.openwebui.com" target="new">Open WebUI</a><br><br></td>
+    <td><img alt="openwebui" src="first-time-install/install-open-webui.jpg"><br><img alt="openwebuidocker" src="first-time-install/docker-install-open-webui.jpg"></td> 
+    <td>In windows, type <b>cmd</b> in the start menu to bring up command window.  Then type the following:<br><br>
+      docker run -d -p 3000:8080 --add-host=host.docker.internal:host-gateway -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:main
+    </td>
+  </tr>  
+        <tr>
+    <td>Run Open-WebUI from Docker<br><br></td>
+    <td><img alt="openwebui" src="first-time-install/run-open-webui-docker.png"></td> 
+    <td>
+     Select the 3000:8080 link to view the Open WebUI interface   
+    </td>
+  </tr>
+     <tr>
+    <td>Run Open WebUI in browser <br><br></td>
+    <td><img alt="openwebuidocker" src="first-time-install/open-webui-drivers-ed-model-page.png"><br><img alt="openwebuidocker" src="first-time-install/open-webui-drivers-ed-model3c.png"><br><img alt="openwebui" src="first-time-install/open-webui-drivers-ed-model3.png"><br><img alt="openwebui" src="first-time-install/open-webui-drivers-ed-model3b.png"><br></td> 
+    <td>
+      <OL>
+         <LI>Visit https://openwebui.com/m/sodkgb/drivers_education:latest
+         <LI> Select Get 
+        <li> Enter: http://localhost:3000, Select Import to WebUI
+          <LI> Select Save & Create
+        <LI> You can now select the Drivers Education Model from the drop down menu
+      </ol>      
+    </td>
+  </tr>  
+        <tr>
+    <td colspan="3"><div align=center><b>Congratulations you can now run the custom Drivers Education Model!</b></div>    
     </td>
   </tr>  
 </table> 
