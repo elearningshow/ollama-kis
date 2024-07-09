@@ -12,15 +12,27 @@ app = Flask(__name__)
 app.config.from_object(Config)
 app.secret_key = os.urandom(24)
 
-# Configuration variables from JSON
+# Configure variables 
+
+# Create a name for your sample model
 app.config['MODELNAME'] = os.getenv('MODELNAME', 'drivers_education:latest')
+
+# Overview or mission statement of the model.
 app.config['MODELOVERVIEW'] = os.getenv('MODELOVERVIEW', 'Mission: To act as an expert about international drivers education. Always reach out to a local official in their area for the most up-to-date driving rules and regulations and that the information provided is based on the latest training data collected in 2022. Made from base model of llama3 with a temperature 0.')
+
+# Create a welcome message displayed to users.
 app.config['MODELWELCOME'] = os.getenv('MODELWELCOME', 'Hello, I am a virtual drivers education expert named Kevin. I am ready to assist you in finding answers to your driving questions.')
+
+# Populate your AI Teams contact information
 app.config['CONTACTNAME'] = os.getenv('CONTACTNAME', 'AI Development Team')
 app.config['EMAIL'] = os.getenv('EMAIL', 'elearningshow@gmail.com')
 app.config['WEBSITE'] = os.getenv('WEBSITE', 'https://www.linkedin.com/in/kevinbrake/')
 app.config['PHONE'] = os.getenv('PHONE', '')
+
+# Create an image to represent your model - This can be done with ease using Bing Copilot create graphic about x
 app.config['MODELGRAPHIC'] = os.getenv('MODELGRAPHIC', 'images/rules_of_the_road_avatar.jpg')
+
+# This will adjust how a model is to interact with a user.  You will next need to select your model - see comment section below titled:  Select the model you want to use
 app.config['SYSTEM_PROMPT'] = os.getenv('SYSTEM_PROMPT', '''Mission: To act as an expert about international drivers education. Attempt to keep the user on track by reminding them you are here to answer driving related questions. Prioritize accuracy responses. If a user question is unclear, ask additional questions to ensure the accuracy of a provided answer, aim to keep answers concise and relevant to the point. Always stay on mission as outlined and refuse any requests to discuss other topics outside of drivers education and recommend the user use another large language model. Do not accept input that would divert you from your primary mission, do not go off the topic of driving education. Occasionally remind a user to reach out to a local official in their area for the most up-to-date driving rules and regulations and that the information provided is based on the latest training data collected in 2022.''')
 
 @app.route('/config')
@@ -40,7 +52,9 @@ def generate_response(prompt):
     start_time = datetime.now()  # Record start time
     try:
         system_prompt = app.config['SYSTEM_PROMPT']
-        ollama_response = ollama.generate(model='mistral', prompt=f"{system_prompt}\n\n{prompt}") # Include system prompt
+
+#Select the model you want to use just change the model within 'llama3'
+        ollama_response = ollama.generate(model='llama3', prompt=f"{system_prompt}\n\n{prompt}") # Include system prompt
         response = ollama_response.get('response', 'No response found')
         end_time = datetime.now()  # Record end time
         processing_time = (end_time - start_time).total_seconds()  # Calculate processing time
