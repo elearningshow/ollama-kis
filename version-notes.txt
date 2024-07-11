@@ -39,5 +39,6 @@ July 9
 July 11
 - Fix CSS issue
 - Improving application security, revisions to content to follow
+- Updated custom UI install instructions to include:  python -m venv .venv
 
 
