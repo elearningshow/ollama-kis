@@ -36,3 +36,8 @@ July 9
 - Update information graphics for configuration of app.py
 - Update app.py with more descriptive information to customize the output
 
+July 11
+- Fix CSS issue
+- Improving application security, revisions to content to follow
+
+
