@@ -54,6 +54,7 @@ This will download all the required files to your pc. <br><br></td>
     <td>Activate python environment <br><br></td>
     <td><img alt="ollama" src="first-time-install/python-activate.jpg"></td>
     <td>In windows, type <b>cmd</b> in the start menu to bring up command window.  Then type the following:<br><br>
+    python -m venv .venv<br><br>
     .venv\Scripts\activate.bat  <br><br></td>
   </tr>  
   <tr>
